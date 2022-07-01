@@ -1,0 +1,1 @@
+# Firebase-Rick-and-Morty
