@@ -1,27 +1,29 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 /* import Detail from '../components/Detail' */
-import Home from '../Components/Home'
-import Perfil from '../Components/Perfil'
+import Home from "../Components/Home";
+import Perfil from "../Components/Perfil";
 /* import Info from '../components/Info' */
 /* import NavBar from '../components/NavBar' */
-import NavbarComponent from '../Components/NavbarComponent'
-import Info from '../Components/Info'
+import NavbarComponent from "../Components/NavbarComponent";
+import Info from "../Components/Info";
+
 
 const DashboardRoutes = () => {
-    return (
-        <>
-            <NavbarComponent />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/perfil" element={<Perfil />} />
-                <Route path="/info/:id" element={<Info />} />
-                {/*    <Route path="/info" element={<Info />} />
+  return (
+    <>
+      <NavbarComponent />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/perfil" element={<Perfil />} />
+        <Route path="/info/:id" element={<Info />} />
+        {/*    <Route path="/info" element={<Info />} />
                 <Route path="/detail/:id" element={<Detail />} /> */}
-                <Route path="/*" element={<Home />} />
-            </Routes>
-        </>
-    )
-}
+        <Route path="/*" element={<Home />} />
+      </Routes>
+   
+    </>
+  );
+};
 
-export default DashboardRoutes
+export default DashboardRoutes;
