@@ -27,16 +27,14 @@ const Login = () => {
         className="bg-image"
         style={{
           backgroundImage: `url('https://images6.alphacoders.com/909/909641.png')`,
-          backgroundSize: '100%'
+          backgroundSize: "100%",
         }}
       >
         <div className="d-flex flex-column min-vh-100 justify-content-center align-items-center">
           <div className="card p-4">
-            <div className="d-flex justify-content-center">
-             
-            </div>
-            <div className="card-header d-flex align-middle">
-              <h3 className="text-warning mt-2 mx-auto">Iniciar sesión </h3>
+            <div className="d-flex justify-content-center"></div>
+            <div className=" d-flex align-middle">
+              <h3 className="text-black mt-2 mx-auto">Iniciar sesión </h3>
             </div>
             <div className="card-body w-100">
               <form
@@ -84,11 +82,11 @@ const Login = () => {
                     name="login-btn"
                   />
                 </div>
-                <div className="mt-5 card-footer">
+                <div className="mt-5  ">
                   <hr className="my-4"></hr>
                   <button
                     className="btn btn-block btn-primary w-100 my-2"
-                    style={{ backgroundColor: `#dd4b39` }}
+                    style={{ backgroundColor: `#000000` }}
                     type="submit"
                     onClick={() => dispatch(loginGoogle())}
                   >
@@ -97,9 +95,9 @@ const Login = () => {
                 </div>
               </form>
             </div>
-            <div className="card-footer">
+            <div className="">
               <div className="d-flex justify-content-center">
-                <Nav.Link className="text-warning" href="/register">
+                <Nav.Link className="text-black" href="/register">
                   Registrarse
                 </Nav.Link>
               </div>

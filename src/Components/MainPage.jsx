@@ -9,7 +9,6 @@ const MainPage = () => {
     const GetData = async () => {
       const resp = await fetch("  https://rickandmortyapi.com/api/character ");
       const { results } = await resp.json();
-      console.log(results);
       setData(results);
     };
     GetData();
@@ -20,7 +19,7 @@ const MainPage = () => {
   };
 
   return (
-    <div className="container" style={{height:'100vw'}}>
+    <div className="container" style={{ height: "100%" }}>
       <input
         type="text"
         placeholder="Search"

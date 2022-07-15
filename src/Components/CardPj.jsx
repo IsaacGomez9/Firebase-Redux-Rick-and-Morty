@@ -1,15 +1,22 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
-import style from '../styles/Cardpersonaje.module.css'
+import style from "../styles/Cardpersonaje.module.css";
 
 const CardPj = ({ data }) => {
   return (
     <div className="">
-      <div className="">
-        <Card style={{ width: "18rem" }} className={style.card} >
-          <Card.Img variant="top" src={data.image} />
+      <div className="mt-3">
+        <Card style={{ width: "18rem" }} className={style.card}>
+          <Card.Img
+            variant="top"
+            src={data.image}
+            className="p-2"
+            style={{ borderRadius: "1rem" }}
+          />
           <Card.Body>
-            <Card.Title className="text-center">{data.name}</Card.Title>
+            <Card.Title className="text-center" style={{ fontSize: "1.5rem" }}>
+              {data.name}
+            </Card.Title>
             <hr />
             <Card.Text>
               <h5>Data :</h5>
@@ -24,7 +31,7 @@ const CardPj = ({ data }) => {
               }
             </div>
             <div className="text-center">
-              <Button className="text-center" variant="primary" href="/home">
+              <Button className="text-center bg-dark" variant="primary" href="/home">
                 Volver
               </Button>
             </div>

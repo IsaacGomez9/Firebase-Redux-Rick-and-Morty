@@ -12,13 +12,19 @@ const NavbarComponent = () => {
           <Navbar.Brand href="/home" style={{ fontSize: "1.5rem" }}>
             Isaac G
           </Navbar.Brand>
-          <Nav className="" style={{ fontSize: "1.5rem" }}>
-            <Nav.Link href="/home">Home</Nav.Link>
-            <Nav.Link href="/perfil">Perfil</Nav.Link>
+          <Nav className="m-auto" style={{ fontSize: "1.5rem" }}>
+            <Nav.Link href="/home">|Home| </Nav.Link>
           </Nav>
-          <Button variant="light" onClick={() => dispatch(logoutAsync())}>
-            Logout
-          </Button>
+          <div className=" ">
+            {" "}
+            <Button
+              className="h-75 mt-1"
+              variant="light"
+              onClick={() => dispatch(logoutAsync())}
+            >
+              Logout
+            </Button>
+          </div>
         </div>
       </Navbar>
     </div>

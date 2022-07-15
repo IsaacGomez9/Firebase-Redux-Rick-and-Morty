@@ -20,9 +20,11 @@ const Info = () => {
   }, []);
 
   return (
-    <div className="div">
-      <div className="container d-flex justify-content-center mt-5">
-        <CardPj data={data} />
+    <div className="bg-dark" style={{ height: "100vh" }}>
+      <div className="container d-flex justify-content-center bg-dark">
+        <div className='m-2'>
+          <CardPj data={data} />
+        </div>
       </div>
     </div>
   );

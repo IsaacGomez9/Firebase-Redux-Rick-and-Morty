@@ -1,9 +1,18 @@
 .card:hover{
-    box-shadow: 0 0.5rem 0.8rem rgba(0,0,0,0.3);
+    box-shadow: 0 0.5rem 0.8rem rgba(237, 237, 237, 0.3);
     cursor: pointer;
     transition: box-shadow 0.5s ease;
     -webkit-transition: box-shadow 0.5s ease;
     -moz-transition: box-shadow 0.5s ease;
     -ms-transition: box-shadow 0.5s ease;
     -o-transition: box-shadow 0.5s ease;
+    
+}
+.card{
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+   
 }
