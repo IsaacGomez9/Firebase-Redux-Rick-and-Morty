@@ -19,26 +19,26 @@ const MainPage = () => {
   };
 
   return (
-    <div className="container" style={{ height: "100%" }}>
-      <input
-        type="text"
-        placeholder="Search"
-        className="form-control"
-        onChange={(e) => filter(e.target.value)}
-      />
-      <div className="row">
-        {data &&
-          data.map((item, index) => {
-            if (item.name.toLowerCase().includes(search.toLowerCase())) {
-              return (
-                <div className="col-md-4 col-xs-12" key={index}>
-                  <Cardpersonaje personaje={item} />
-                </div>
-              );
-            }
-          })}
+      <div className="container" style={{ height: "100%" }}>
+        <input
+          type="text"
+          placeholder="Search"
+          className="form-control"
+          onChange={(e) => filter(e.target.value)}
+        />
+        <div className="row">
+          {data &&
+            data.map((item, index) => {
+              if (item.name.toLowerCase().includes(search.toLowerCase())) {
+                return (
+                  <div className="col-md-4 col-xs-12 d-flex justify-content-center" key={index}>
+                    <Cardpersonaje personaje={item} />
+                  </div>
+                );
+              }
+            })}
+        </div>
       </div>
-    </div>
   );
 };
 
